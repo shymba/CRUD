@@ -1,0 +1,101 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.mt-20, .card {
+    margin-top: 20px;
+}
+
+.image {
+    width: 100%;
+    border-radius: 50%;
+    padding: 20px;
+}
+
+.user-info {
+    padding: 15px;
+}
+
+.red {
+    margin-left: 20px;
+}
+
+footer {
+    height: 70px;
+    margin-top: 40px;
+}
+
+footer>.container, footer .row {
+    height: 100%;
+}
+
+.social {
+    padding: 0;
+    list-style: none;
+    display: flex;
+}
+
+.social-item {
+    width: 40px;
+    height: 40px;
+    background-color: #8082b0;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.social-link {
+    text-decoration: none;
+    font-size: 14px;
+    color: #fff;
+    font-family: Arial;
+}
+
+.social-link:hover {
+    text-decoration: none;
+    color: #fff;
+}
+
+.page-wraper {
+    margin: 40px auto;
+    padding: 20px 25px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 7px;
+}
+
+.card-block {
+    padding: 20px;
+}
+
+.w5 {
+    width: 5%;
+}
+
+.w10 {
+    width: 10%;
+}
+
+.w15 {
+    width: 15%;
+}
+
+.w25 {
+    width: 25%;
+}
+
+.w30 {
+    width: 30%;
+}
+
+.article-inline {
+    padding-left: 10px;
+}
+
+.article-inline:nth-of-type(odd) {
+    background: rgba(0, 0, 0, 0.05);
+}
