@@ -20,4 +20,4 @@ document.addEventListener('DOMContentLoaded', async function() {
                 </div>`;
             articles.insertAdjacentHTML('beforeend', userHTML);
     })
-})
+});

@@ -41,6 +41,17 @@ app.post('/users', async (req, resp) => {
     })
     await newUser.save();
     resp.send('Created');
+});
+
+app.post('/profiles', async (req, resp) => {
+    let reqBody = req.body;
+    let newProfile = new Profile({
+        id: id++,
+        userName: reqBody.userName,
+        email: reqBody.email
+    })
+    await newProfile.save();
+    resp.send('Created');
 })
 
 app.use(express.static('public')); //main page
