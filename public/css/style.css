@@ -79,6 +79,10 @@ footer>.container, footer .row {
     padding: 20px;
 }
 
+.profile-dashboard {
+    padding: 5px;
+}
+
 .w5 {
     width: 5%;
 }

@@ -5,6 +5,8 @@ let User = require('./models/users').User;
 let Profile = require('./models/profiles').Profile;
 let multer = require('multer');
 let path = require('path');
+let uniqid = require('uniqid');
+
 
 mongoose.connect('mongodb://localhost/CRUD', { useNewUrlParser: true });
 app.use(express.json());
@@ -15,8 +17,6 @@ let imgStorage = multer.diskStorage({
 })
 
 app.use(multer({storage: imgStorage}).single('imgFile'));
-
-let id = 1;
 
 app.get('/users', async (req, resp) => {
     let users = await User.find();
@@ -32,7 +32,7 @@ app.post('/users', async (req, resp) => {
     let reqBody = req.body;
     let imgPath = req.file.path.substring(req.file.path.indexOf(path.sep), req.file.path.length);
     let newUser = new User({
-        id: id++,
+        id: uniqid(),
         name: reqBody.name,
         gender: reqBody.gender,
         birthday: reqBody.birthday,
@@ -46,7 +46,7 @@ app.post('/users', async (req, resp) => {
 app.post('/profiles', async (req, resp) => {
     let reqBody = req.body;
     let newProfile = new Profile({
-        id: id++,
+        id: uniqid(),
         userName: reqBody.userName,
         email: reqBody.email
     })
