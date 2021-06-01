@@ -40,11 +40,9 @@
             </button>
           </div>
             <div class="row mt-20 articles">
-              
 
-                
             </div>
-        </div> 
+        </div>
     </main>
 
     <!-- Modal -->
@@ -52,7 +50,7 @@
       <div class="modal-dialog">
         <div class="modal-content">
           <div class="modal-header">
-            <h5 class="modal-title">Profile info</h5>
+            <h5 class="modal-title">Account info</h5>
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
               <span aria-hidden="true">&times;</span>
             </button>
@@ -80,6 +78,33 @@
                 <input type="file" class="form-control-file form-control" id="loadImage">
               </div>
               <button class="btn btn-info">Create</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal create profile -->
+    <div class="modal" tabindex="-1" id="createProfileModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Profile info</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div class="modal-body">
+            <form class="create-acc-form">
+              <div class="form-group">
+                <label for="name">User name</label>
+                <input type="text" class="form-control" id="name" placeholder="user name">
+              </div>
+              <div class="form-group">
+                <label for="email-adress">Email address</label>
+                <input type="email" class="form-control" id="email-adress" placeholder="name@example.com">
+              </div>
+              <button class="btn btn-info create-profile">Create profile</button>
             </form>
           </div>
         </div>

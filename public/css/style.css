@@ -25,6 +25,9 @@
 .red {
     margin-left: 20px;
 }
+.btn-outline-info {
+    margin-left: 20px;
+}
 
 footer {
     height: 70px;
@@ -94,6 +97,10 @@ footer>.container, footer .row {
 
 .w30 {
     width: 30%;
+}
+
+.w45 {
+    width: 45%;
 }
 
 .article-inline {
