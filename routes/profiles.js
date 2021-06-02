@@ -21,4 +21,10 @@ router.post('/', async (req, resp) => {
     resp.send('Created');
 });
 
+router.delete('/:id', async (req, resp) => {
+    let id = req.params.id;
+    await User.deleteOne({id: id});
+    resp.send('Deleted!');
+})
+
 module.exports = router;

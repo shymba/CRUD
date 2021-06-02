@@ -11,6 +11,12 @@ router.get('/', async (req, resp) => {
     resp.send(users);
 });
 
+router.get('/:id', async (req, resp) => {
+    let id = req.params.id;
+    let user = await User.findOne({id: id});
+    resp.send(user);
+});
+
 router.post('/', async (req, resp) => {
     let reqBody = req.body;
     let imgPath = req.file.path.substring(req.file.path.indexOf(path.sep), req.file.path.length);
@@ -30,6 +36,12 @@ router.delete('/:id', async (req, resp) => {
     let id = req.params.id;
     await User.deleteOne({id: id});
     resp.send('Deleted!');
+})
+
+router.put('/:id', async (req, resp) => {
+    let id = req.params.id;
+    await User.updateOne({id: id}, req.body);
+    resp.send('Updated!');
 })
 
 module.exports = router;

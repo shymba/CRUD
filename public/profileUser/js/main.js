@@ -12,8 +12,6 @@ document.addEventListener('DOMContentLoaded', async function() {
                             <p class="gender">${user.gender}</p>
                             <p class="bthday">${user.birthday}</p>
                             <p class="city">${user.city}</p>
-                            <button type="button" class="btn btn-outline-success">Edit</button>
-                            <button type="button" class="btn btn-outline-danger red">Delete</button>
                             <button type="button" class="btn btn-outline-info" data-toggle="modal" data-target="#createProfileModal">Create profile</button>
                         </div>
                     </div>

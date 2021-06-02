@@ -66,11 +66,7 @@
                     </div>
                   </div>
                   <div class="tab-pane fade profile-dashboard" id="v-pills-profile" role="tabpanel" aria-labelledby="v-pills-profile-tab">
-                    <!-- <div class="d-flex justify-content-between align-items-center article-inline">
-                      <div class="id w10">1</div>
-                      <div class="user-name w45">User name main</div>
-                      <div class="email-adress w45">main@example.com</div>
-                    </div> -->
+
                   </div>
                   <div class="tab-pane fade" id="v-pills-messages" role="tabpanel" aria-labelledby="v-pills-messages-tab">Profiles over 18 years old: 1</div>
                 </div>
@@ -79,6 +75,42 @@
           </div>
         </div>
       </div>
+
+      <!-- Update modal -->
+      <div class="modal" tabindex="-1" id="myUpdateModal">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title">Update info</h5>
+              <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body">
+              <form class="update-acc-form">
+                <div class="form-group">
+                  <label for="update-name">Name</label>
+                  <input type="text" class="form-control" id="update-name" placeholder="Name">
+                </div>
+                <div class="form-group">
+                  <label for="update-gender">Gender</label>
+                  <input type="text" class="form-control" id="update-gender" placeholder="Gender">
+                </div>
+                <div class="form-group">
+                  <label for="update-birthdate">Birthdate</label>
+                  <input type="text" class="form-control" id="update-birthdate" placeholder="Birthdate">
+                </div>
+                <div class="form-group">
+                  <label for="update-city">City</label>
+                  <input type="text" class="form-control" id="update-city" placeholder="City">
+                </div>
+                <button class="btn btn-info btn-update">Update</button>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+
     </main>
 
 
@@ -88,6 +120,8 @@
     <script src="/js/bootstrap.min.js"></script>
     <script src="/js/users.js"></script>
     <script src="/js/profiles.js"></script>
+    <script src="js/delete-user.js"></script>
+    <script src="js/update-user.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

@@ -19,8 +19,8 @@ async function addUsers() {
                 <div class="gender w10">${user.gender}</div>
                 <div class="birthday w25">${user.birthday}</div>
                 <div class="city w15">${user.city}</div>
-                <div class="edit w10"><button class="btn btn-link">edit</button></div>
-                <div class="delete w5"><button class="btn btn-link">X</button></div>
+                <div class="edit w10"><button class="btn btn-link btn-edit" data-toggle="modal" data-target="#myUpdateModal">edit</button></div>
+                <div class="delete w5"><button class="btn btn-link btn-delete">X</button></div>
             </article>`;
             articles.insertAdjacentHTML('beforeend', userHTML);
     })
@@ -33,7 +33,7 @@ async function addProfiles() {
     let i = 1;
     profiles.forEach((profile) => {
         let profileHTML = `
-            <div class="profile-dashboard d-flex justify-content-between align-items-center article article-inline">
+            <div class="articles-profile profile-dashboard d-flex justify-content-between align-items-center article article-inline">
                 <div class="num w10">${i++}</div>
                 <input class="id" type="hidden" value="${profile.id}">
                 <div class="user-name w45">${profile.userName}</div>

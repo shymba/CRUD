@@ -2,8 +2,8 @@ let express = require('express');
 let app = express();
 let mongoose = require('mongoose');
 let multer = require('multer');
-let postRouter = require('./routes/posts');
-let postRouter2 = require('./routes/postsProfiles');
+let postRouter = require('./routes/users');
+let postRouter2 = require('./routes/profiles');
 
 
 mongoose.connect('mongodb://localhost/CRUD', { useNewUrlParser: true });
