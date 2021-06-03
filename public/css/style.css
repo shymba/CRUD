@@ -115,3 +115,19 @@ footer>.container, footer .row {
 .form-control-file {
 	height: auto;
 }
+
+.login-container {
+    margin-top: 50px;
+    padding: 20px 15px 30px;
+    box-shadow: 0 0 10px #ccc;
+    border-radius: 7px;
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+#myTabContent {
+    margin-top: 20px;
+}
